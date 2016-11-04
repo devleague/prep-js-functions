@@ -22,10 +22,11 @@ var b = 29;
  *  This function returns the result of adding `a` and `b` together.
  *  Store this value in a variable named `sum`.
  */
-function add() {
-  return a+b;
+function add(num1, num2) {
+  return num1+num2;
 }
-var sum = add();
+var sum = add(24, 23);
+console.log(sum);
 
 /**
  *  #3
