@@ -26,7 +26,7 @@ function add(num1, num2) {
   return num1+num2;
 }
 var sum = add(24, 23);
-console.log(sum);
+// console.log(sum);
 
 /**
  *  #3
@@ -36,7 +36,11 @@ console.log(sum);
  *  Store this value in a variable named `difference`
  */
 
-
+function subtract(num1, num2) {
+  return num2-num1;    
+}
+var difference = subtract(1239847, 283);
+console.log(difference);
 /**
  *  #4
  *  Function - multiply
