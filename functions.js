@@ -54,7 +54,7 @@ function multiply(num1, num2) {
   return num2 * num1;
 }
 var product = multiply(5, 10);
-console.log(product); // 50
+// console.log(product); // 50
 
 /**
  *  #5
@@ -66,6 +66,11 @@ console.log(product); // 50
  *  value stored in `difference`.
  */
 
+function checkDifference(X) {
+  return "My football team lost " + X + " times this week.";
+}
+var checkMinus = checkDifference(difference);
+// console.log(checkMinus); // My football team lost ... times this week.
 
 /**
  *  #6
@@ -76,7 +81,11 @@ console.log(product); // 50
  *  "I CAN ADDZ X NUMBERS"  where `X` is the value
  *  stored in the variable `sum`.
  */
-
+function checkSum(X) {
+  return "I CAN ADDZ " + X + " NUMBERS";
+}
+var text2 = checkSum(sum);
+console.log(text2); // I CAN ADDZ ... NUMBERS
 
 /**
  *  #7
