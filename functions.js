@@ -162,7 +162,7 @@ function addThenMultiply(num1, num2, num3) {
   return add(num1, num2)*num3;
 }
 var test = addThenMultiply(sum,difference,product);
-console.log(test);
+// console.log(test);
 /**
  *  #10
  *  Function - createFullName
@@ -177,7 +177,12 @@ console.log(test);
  * Call this function and pass your first and last name into it.
  * Store the return value to a variable named `myFullName`
  */
-
+function createFullName(firstName, lastName) {
+  var fullName = firstName + " " + lastName;
+  return fullName;
+}
+var myFullName = createFullName("Kevin", "White");
+console.log(myFullName);
 
 /**
  *  #11
