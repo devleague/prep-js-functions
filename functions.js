@@ -85,7 +85,7 @@ function checkSum(X) {
   return "I CAN ADDZ " + X + " NUMBERS";
 }
 var text2 = checkSum(sum);
-console.log(text2); // I CAN ADDZ ... NUMBERS
+// console.log(text2); // I CAN ADDZ ... NUMBERS
 
 /**
  *  #7
@@ -96,6 +96,25 @@ console.log(text2); // I CAN ADDZ ... NUMBERS
  *  then prints the result to the console.
  */
 
+// function checkProduct() {
+//   console.log(product * difference);
+// }
+// checkProduct();
+
+
+// function checkProduct(asdfgadfasdf) {
+//   console.log("inside function", asdfgadfasdf);
+// }
+// var x = checkProduct(product, difference);
+// console.log("product", product);
+// console.log("difference", difference);
+// console.log("outside function", x);
+
+function checkProduct(p, d) {
+  return p*d;
+}
+var newProduct = checkProduct(7, multiply(3,5));
+// console.log(newProduct);
 
 /**
  *  #8
@@ -110,7 +129,23 @@ console.log(text2); // I CAN ADDZ ... NUMBERS
  *  **example:**
  *      addThenSubtract(4, 5, 7); //-> returns 2 because 4 + 5 - 7 = 2
  */
+function addThenSubtract(num1, num2, num3) {
+  // method 1
+  return subtract(num3, add(num1, num2));
 
+  // method 2
+  // var result = subtract(num3, add(num1, num2));
+  // return result;
+
+  // method 3
+  // var first = add(num1,num2); // num1 + num2
+  // var second = subtract(num3, first); // first - num3
+  // return second;
+}
+
+var pumpkinPie = addThenSubtract(10, 5, 2);
+
+// console.log(pumpkinPie);
 
 /**
  *  #9
