@@ -39,8 +39,8 @@ var sum = add(24, 23);
 function subtract(num1, num2) {
   return num2-num1;    
 }
-var difference = subtract(1239847, 283);
-console.log(difference);
+var difference = subtract(124, 283);
+// console.log(difference);
 /**
  *  #4
  *  Function - multiply
@@ -48,7 +48,13 @@ console.log(difference);
  *  This function returns the result of multiplying `b` by `a`.
  *  Store this value in a variable named `product`
  */
-
+function multiply(num1, num2) {
+  // var product = num1 * num2;
+  // return product;
+  return num2 * num1;
+}
+var product = multiply(5, 10);
+console.log(product); // 50
 
 /**
  *  #5
