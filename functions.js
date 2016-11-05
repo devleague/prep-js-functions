@@ -158,8 +158,11 @@ var pumpkinPie = addThenSubtract(10, 5, 2);
  *
  *  Store the return of this function to a variable named `howMany`
  */
-
-
+function addThenMultiply(num1, num2, num3) {
+  return add(num1, num2)*num3;
+}
+var test = addThenMultiply(sum,difference,product);
+console.log(test);
 /**
  *  #10
  *  Function - createFullName
