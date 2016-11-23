@@ -7,47 +7,106 @@ Functions are great, they take data (input), do stuff with that data and then re
     - Copy the SSH address on the page
     - Run the command: `$ git clone [YOUR SSH ADDRESS]` to clone this repo onto your computer.
 1. Navigate into the exercise folder, e.g. `$ cd prep-js-functions`.
-1. Run the command: `$ npm install` to get all other files needed to run the tests.
+<!-- 1. Run the command: `$ npm install` to get all other files needed to run the tests. -->
 1. Your work will be entered into the file named `functions.js`
-1. Run your tests with the command `$ npm test`.
+<!-- 1. Run your tests with the command `$ npm test`.
   - You will need to enter this command each time you want to run the tests.
-1. Make all your tests pass :)
+1. Make all your tests pass :) -->
 
 Below are some specifications for Functions to be built.
 
 # 1) `Declare Two Variables`
-- `a` random Number value
-- `b` random Number value
+Declare Two Variables
+```javascript
+@variable Datatype: Number a
+@variable Datatype: Number b
+```
 
-We will be using both of these variables to pass as `parameters` to the following functions that we will write. Pay close attention to the other variable names you will create as they will become input to _other_ functions.
+These two variables will be passed as parameters to the functions that we will write. Parameters are the function's arguments. Parameters allow us to reuse a function with different values. Pay close attention to the other variable names you will create as they will become input to _other_ functions.
 
 # 2) `Function - add`
-This function returns the result of adding `a` and `b` together. Store this value in a variable named `sum`.
+```javascript
+@param Datatype: Number num1
+@param Datatype: Number num2
+@return Datatype: Number
+```
+
+This function takes two number arguments, `num1` and `num2`. This function `returns` back a number that is the sum of `num1` and `num2`.
+
+You can test your function by invoking it with two arguments and saving its return value to a variable. Store the return value in a variable named `sum`. Try invoking it with your previously declared variables!
 
 # 3) `Function - subtract`
-This function returns the result of subtracting `b` from `a` Store this value in a variable named `difference`
+```javascript
+@param Datatype: Number num1
+@param Datatype: Number num2
+@return Datatype: Number
+```
+
+This function takes two number arguments, `num1` and `num2`. This function `returns` back a number that is equal to `num2` minus `num1`. Store the return value in a variable named `difference`.
+
+Note that you can reuse the same parameter names without issue!
 
 # 4) `Function - multiply`
-This function returns the result of multiplying `b` by `a`. Store this value in a variable named `product`
+```javascript
+@param Datatype: Number num1
+@param Datatype: Number num2
+@return Datatype: Number
+```
+
+This function returns the result of multiplying `num1` by `num2`. Store the return value in a variable named `product`.
 
 # 5) `Function - checkDifference`
-This function accesses the value stored in the `difference` variable and uses this number to return the string "My football team lost X times this week", where `X` is the value stored in `difference`.
+```javascript
+@param Datatype: Number X
+@return Datatype: String
+```
+
+This function returns the string. "My football team lost X times this week", where `X` is the value of the parameter. Invoke this function using the variable `difference` as the parameter.
 
 # 6) `Function - checkSum`
-This function checks the value stored at `sum` and uses that number to print to the screen the phrase "I CAN ADDZ X NUMBERS"  where `X` is the value stored in the variable `sum` .
+```javascript
+@param Datatype: Number X
+@return Datatype: String
+```
+
+This function returns the string "I CAN ADDZ X NUMBERS"  where `X` is the value of the parameter. Invoke this function using the variable `sum` as the parameter.
 
 # 7) `Function - checkProduct`
-This function checks the value stored at `product` and multiplies it by the number stored at `difference` and then prints the result to the console.
+```javascript
+@return Datatype: Number
+```
+
+This function does not require any parameters. This function checks the value stored at `product` and multiplies it by the number stored at `difference` and then prints the result to the console.
+
+Can you see how to use a previously-created function to help?
 
 # 8) `Function - addThenSubtract`
-This function takes three `Number` arguments named by you, then adds the first two arguments together. Then with the sum of that operation, subtract the value at the third argument. _This function should make use of your previous functions_.
+```javascript
+@param Datatype: Number numA
+@param Datatype: Number numB
+@param Datatype: Number numC
+@return Datatype: Number
+```
+
+This function takes three `Number` arguments,
+then adds the first two arguments together.
+Then with the sum of that operation, subtract
+the value at the third argument. _This function should
+make use of your previous functions_.
 
 **example:** `addThenSubtract(4, 5, 7); //-> returns 2 because 4 + 5 - 7 = 2`
 
 # 9) `Function - addThenMultiply`
-This function takes three `Number` arguments named by you, then adds the first two arguments together. Then with the sum of that operation multiply it by the third argument. _This function also should make use of your previous functions_.
+```javascript
+@param Datatype: Number numX
+@param Datatype: Number numY
+@param Datatype: Number numZ
+@return Datatype: Number
+```
 
-**Store the return of this function to a variable named** `howMany`
+This function takes three `Number` arguments, then adds the first two arguments together. Then with the sum of that operation multiply it by the third argument. _This function also should make use of your previous functions_.
+
+Store the return of this function to a variable named `howMany`.
 
 # 10) `Function - createFullName`
 ```javascript
@@ -66,14 +125,20 @@ This function takes two String arguments `firstName` and `lastName`. This functi
 @return Datatype: Boolean
 ```
 
-This function takes one Number argument `age`. This function returns the `Boolean` value `true` or `false` if `age` is lower than the legal drinking age in the state of Hawaii.
+This function takes one Number argument, `age`. This function returns the `Boolean` value `true` or `false` depending on whether `age` is lower than the legal drinking age in the state of Hawaii.
 
 **Call this function and pass in a number value. Store the return value to a variable named** `canDrinkBeer`
 
 # 12) `Function - throwParty`
-This function checks the value stored at the `canDrinkBeer` variable and if the value is `false` it should print to a message to the screen, "The Party will have tons of Cake!" otherwise this message should be "This Party will have an open bar".
+This function checks the value stored at the `canDrinkBeer` variable. If the value is `false`, then it should print to a message to the screen: "The Party will have tons of Cake!" If not, then it should print a different message: "This Party will have an open bar."
 
 # 13) `Function - eatFood`
+```javascript
+@param Datatype: String firstName
+@param Datatype: String lastName
+@param Datatype: String food
+@return Datatype: String
+```
 This function takes 3 arguments `firstName`, `lastName`, `food` and prints out a message to your screen. Internally this function will make use of the `createFullName` function you created earlier.
 
 **example input:** if someone called your program like this `eatFood( "John", "Papa", "Pizza" )`
